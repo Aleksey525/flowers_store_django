@@ -21,8 +21,8 @@ DEBUG = env.bool('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
-env =Env()
-env.read_env()
+BOT_TOKEN = env.str('BOT_TOKEN')
+
 
 
 # Application definition
@@ -34,6 +34,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'flowers_store.apps.bot',
+    'flowers_store.apps.management'
+
 ]
 
 MIDDLEWARE = [

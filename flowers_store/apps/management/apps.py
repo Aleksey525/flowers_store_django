@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class BotConfig(AppConfig):
+class ManagementConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'flowers_store.apps.bot'
+    name = 'flowers_store.apps.management'
